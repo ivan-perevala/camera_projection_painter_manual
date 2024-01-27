@@ -1,0 +1,617 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+
+
+msgid "Camera"
+msgstr "Камера"
+
+
+msgid "Image"
+msgstr "Зображення"
+
+
+msgid "Camera binded image. It will be used as a paint brush. Also, its size affects the distortion parameters in the pixel coordinate system (in which way - described in more detail for the corresponding parameters), and therefore - also the possibility of exporting to certain file formats"
+msgstr "Зображення пов'язане до камери. Буде використано як кисть для малювання. Його розмір впливає на пареметри дисторсії в піксельній системі координат (у який спосіб - детальніше описано для окремих параметрів), а значить - також на можливість експорту в певні формати файлів"
+
+
+msgid "Millimeters Focal Length"
+msgstr "Фокальна Відстань в Міліметрах"
+
+
+msgid "Focal length of the camera in millimeters. The value is stored with double precision"
+msgstr "Фокальна відстань камери у міліметрах. Значення зберігається з подвійною точністю"
+
+
+msgid "Pixels Focal Length"
+msgstr "Фокальна Відстань у Пікселях"
+
+
+msgid "The focal length of the camera in pixels. Calculated by the formula:"
+msgstr "Фокальна відстань камери у пікселях. Значення може бути відображене з подвійною точністю. Обраховується за формулою:"
+
+
+msgid "`Pixels Focal Lens = F * P / S`"
+msgstr "`Pixels Focal Lens = F * P / S`"
+
+
+msgid "where `F` is the focal length in millimeters, `P` is the larger side of the image, `S` is the size of the camera sensor in millimeters"
+msgstr "де `F` - фокальна відстань у міліметрах, `P` - більша сторона зображення, `S` - розмір сенсору камери у міліметрах"
+
+
+msgid "Sensor"
+msgstr "Сенсор"
+
+
+msgid "The size of the camera sensor in millimeters, taking into account the larger side of the attached image. This means that if the sensor fit option is set to horizontal - the width of the sensor will be used for calculations, for vertical fit type - height accordingly. These values can be set manually. But for when working with photogrammetric scenes, it is necessary to use the automatic type of sensor adjustment. In this case, if the image has a landscape orientation (or the sides are equal), the width of the sensor will be used, and in the case of a portrait - the height of the sensor. As you can see, there are opportunities for using non-standard workflows, but the main mode of operation is the automatic sensor type. Also note the camera-bound image, this is important for importing and exporting to some file formats. The value is stored with double precision"
+msgstr "Розмір сенсору камери у міліметрах, зважаючи на більшу сторону прив'язаного зображення. Це означає що якщо параметр підгонки сенсора встановлено на горизонтальний - буде використано ширину сенсора для обрахунків, для вертикального типу підгонки - відповідно висоту. Ці значення можна встановити вручну. Але для роботи саме з фотограметричними сценами необхідно використовувати автоматичний тип підгонки сенсора. В такому разі якщо зображення має альбомну орієнтацію (або сторони рівні) - буде використано ширину сенсора, а у випадку портретної - висоту. Як бачите, тут присутні можливості для використання нестандартних робочих процесів, але основним способом роботи є автоматичний тип сенсора. Також зважайте на наявність прив'язаного до камери зображення, це важливо для імпорту і експорту в деякі формати файлів. Значення зберігається з подвійною точністю"
+
+
+msgid "Millimeters Skew"
+msgstr "Зсув у Міліметрах"
+
+
+msgid "The horizontal skew of the image in millimeters relative to its center, excluding principal deviation. The value is stored with double precision"
+msgstr "Горизонтальний зсув зображення у міліметрах відносно його центру без урахування відхилення. Значення зберігається з подвійною точністю"
+
+
+msgid "Pixels Skew"
+msgstr "Зсув у Пікселях"
+
+
+msgid "Horizontal skew of the image in pixels relative to its center without taking into account deviation. Calculated by the formula:"
+msgstr "Горизонтальний зсув зображення у пікселях відносно його центру без урахування відхилення. Обраховується за формулою:"
+
+
+msgid "`Pixels Skew = S * P`"
+msgstr "`Зсув = S * P`"
+
+
+msgid "where `S` is the skew value in millimeters, `P` is the size of the larger side of the image"
+msgstr "де `S` - значення зсуву у міліметрах, `P` - розмір більшої сторони зображення"
+
+
+msgid "Aspect Ratio"
+msgstr "Співвідношення Сторін"
+
+
+msgid "Image aspect ratio correction factor. It means the ratio of the height of the image to its width - that is, values ​​greater than 1.0 will stretch it vertically, smaller values ​​will compress it. The value is stored with double precision"
+msgstr "Фактор корекції співвідношення сторін зображення. Мається на увазі співвідношення висоти зображення до його ширини - тобто значення більше 1.0 розтягнуть його по вертикалі, менші ж - стиснуть. Значення зберігається з подвійною точністю"
+
+
+msgid "Millimeters Principal X"
+msgstr "Відхилення у Міліметрах X"
+
+
+msgid "The deviation from the center of the image in millimeters along the X axis. Calculated by the formula:"
+msgstr "Відхилення від центру зображення у міліметрах за віссю X. Обраховується за формулою:"
+
+
+msgid "`Millimeters Principal X = Px * S`"
+msgstr "`Millimeters Principal X = Px * S`"
+
+
+msgid "where `Px' is the deviation factor, `S' is the size of the camera sensor"
+msgstr "де `Px` - фактор відхилення, `S` - розмір сенсора камери"
+
+
+msgid "Millimeters Principal Y"
+msgstr "Відхилення у Міліметрах Y"
+
+
+msgid "The deviation from the center of the image in millimeters along the Y axis. Calculated by the formula:"
+msgstr "Відхилення від центру зображення у міліметрах за віссю Y. Обраховується за формулою:"
+
+
+msgid "`Millimeters Principal Y = Py * S`"
+msgstr "`Millimeters Principal Y = Py * S`"
+
+
+msgid "where `Py' is the deviation factor, `S' is the size of the camera sensor"
+msgstr "де `Py` - фактор відхилення, `S` - розмір сенсора камери"
+
+
+msgid "Pixels Principal"
+msgstr "Відхилення у Пікселях"
+
+
+msgid "The deviation from the center of the image in pixels. Calculated by the formula:"
+msgstr "Відхилення від центру зображення у пікселях. Обраховується за формулою:"
+
+
+msgid "`Pixels Principal = Pxy * L + (Sxy / 2)`"
+msgstr "`Pixels Principal = Pxy * L + (Sxy / 2)`"
+
+
+msgid "where `Pxy` is the deviation factor, `L` is the larger side of the image, `Sxy` is the image size"
+msgstr "де `Pxy` - фактор відхилення, `L` - більша сторона зображення, `Sxy` - розмір зображення"
+
+
+msgid "Distortion Model"
+msgstr "Модель Дисторсії"
+
+
+msgid "Mathematical model of lens distortion. Note that distortion coefficients may be inconsistent between different distortion models"
+msgstr "Математична модель дисторсії лінзи. Майте на увазі що коефіцієнти дисторсії можуть бути несумісними між різними моделями дисторсії"
+
+
+msgid "None"
+msgstr "Немає"
+
+
+msgid "No distortion, only correction"
+msgstr "Без дисторсії, лише корекція"
+
+
+msgid "Division"
+msgstr "Ділення"
+
+
+msgid "The division model with two radial distortion coefficients. This is the simplest mathematical model of linear division of image coordinates, which can be used if the distortion is small, for example, for scenes where the shooting took place close to the object"
+msgstr "Модель ділення з двома коефіцієнтами радіальної дисторсії. Це найпростіша математична модель лінійного поділу координат зображення, яку можна використати якщо дисторсія невелика, наприклад для сцен де зйомка відбувалася близько до об'єкта"
+
+
+msgid "Polynomial"
+msgstr "Поліноміальна"
+
+
+msgid "A polynomial model with four radial and two tangential distortion coefficients. It uses polynomial functions instead of simple linear division, so it is a more accurate and flexible model that can be used for complex scenes with significant lens distortions"
+msgstr "Поліноміальна модель з чотирма радіальними і двома тангенціальними коефіцієнтами дисторсії. Вона використовує поліноміальні функції замість простого лінійного ділення тому це більш точна і гнучка модель, яку можна використати для комплексних сцен зі значними спотворення об'єктива"
+
+
+msgid "Brown-Conrady"
+msgstr "Брауна-Конраді"
+
+
+msgid "Brown-Conrady polynomial model with four with four radial and two tangential distortion coefficients. It is the most accurate and flexible model that can be used for complex scenes with significant lens distortions. In general, it is used when a simple linear division model is no longer sufficient"
+msgstr "Поліноміальна модель Брауна-Конраді з чотирма радіальними і двома тангенціальними коефіцієнтами дисторсії. Це більш точна і гнучка модель, яку можна використати для комплексних сцен зі значними спотворення об'єктива. Загалом, її використовують коли моделі простого лінійного ділення вже не достатньо"
+
+
+msgid "K1"
+msgstr ""
+
+
+msgid "Represents linear radial distortion. It corrects or introduces distortion that increases linearly with radial distance. The value is stored with double precision"
+msgstr "Представляє лінійне радіальне спотворення. Він коригує або вносить викривлення, що лінійно зростає з радіальною відстанню. Значення зберігається з подвійною точністю"
+
+
+msgid "K2"
+msgstr ""
+
+
+msgid "Represents cubic radial distortion. It corrects or introduces distortion that increases with the cube of the radial distance. The value is stored with double precision"
+msgstr "Представляє кубічне радіальне викривлення. Він коригує або вносить викривлення, що збільшується разом із кубом радіальної відстані. Значення зберігається з подвійною точністю"
+
+
+msgid "K3"
+msgstr ""
+
+
+msgid "Represents quintic (fifth-order) radial distortion. It corrects or introduces distortion that increases with the fifth power of the radial distance. The value is stored with double precision"
+msgstr "Представляє квінтичне (п’ятого порядку) радіальне викривлення. Він виправляє або вносить викривлення, що збільшується з п’ятим ступенем радіальної відстані. Значення зберігається з подвійною точністю"
+
+
+msgid "K4"
+msgstr ""
+
+
+msgid "Represents seventh-order radial distortion. It corrects or introduces distortion that increases with the seventh power of the radial distance. The value is stored with double precision"
+msgstr "Представляє радіальне викривлення сьомого порядку. Він виправляє або вносить викривлення, що збільшується із збільшенням радіальної відстані в сьомому ступені. Значення зберігається з подвійною точністю"
+
+
+msgid "P1"
+msgstr ""
+
+
+msgid "Represents linear tangential distortion. Corrects or introduces distortion that increases linearly with the distance from the image center. The value is stored with double precision"
+msgstr "Представляє лінійне тангенціальне спотворення. Виправляє або вносить спотворення, що лінійно зростає з відстанню від центру зображення. Значення зберігається з подвійною точністю"
+
+
+msgid "P2"
+msgstr ""
+
+
+msgid "Represents quadratic tangential distortion. Corrects or introduces distortion that increases with the square of the distance from the image center. The value is stored with double precision"
+msgstr "Представляє квадратичне тангенціальне викривлення. Виправляє або вносить спотворення, що збільшується з квадратом відстані від центру зображення. Значення зберігається з подвійною точністю"
+
+
+msgid "Bind History"
+msgstr "Історія Зображень"
+
+
+msgid "Images that were previously binded to this camera. The option is used if, for example, it is necessary to draw some area from another image, and then return to the previous one. Of course, this is not a standard workflow, but it is used sometimes"
+msgstr "Зображення що раніше були пов'язані з цією камерою. Опція використовується якщо наприклад, необхідно намалювати якусь ділянку з іншого зображення, а потім повернутися до попереднього. Звісно, це не стандартний спосіб роботи але інколи використовується"
+
+
+msgid "The image that was previously attached to this camera"
+msgstr "Зображення що раніше було прив'язане до цієї камери"
+
+
+msgid "Reality Capture Properties"
+msgstr "Параметри Reality Capture"
+
+
+msgid "The properties that were imported from Reality Capture.They will be used for export"
+msgstr ""
+
+
+msgid "Preferences"
+msgstr "Налаштування"
+
+
+msgid "Use Mesh Preview"
+msgstr "Відображення Прев'ю Сітки"
+
+
+msgid "Use mesh preview for brush and inspection. This option can be useful to significantly reduce the use of video memory, for example, if the purpose of using the addon is only to import and export cameras. The current implementation of Blender forces the display to save the object's data and re-render it, just to show the brush preview. Of course, this is convenient, but it significantly increases the load on the system. Therefore, if it is not critical for you to see a preview of the brush you are drawing with, you can disable the preview"
+msgstr "Чи використовувати попередній перегляд для кисті. Опція може бути корисною для того щоб значно зменшити використання відеопам'яті, наприклад, якщо доповнення використовується лише для імпорту і експорту камер. Поточна імплементація Blender змушує додатково зберігати дані об'єкту і повторно їх відображувати, лише для того аби показати попередній перегляд кисті. Звісно, це зручно але значно збільшує завантаження системи. Тому якщо відображення попереднього перегляду кисті не критичне, його можна просто вимкнути"
+
+
+msgid "Use Previews"
+msgstr "Попередній Перегляд"
+
+
+msgid "Use image previews. Whether to generate and display image previews in the viewport. This does not significantly increase the amount of video memory, but it can cause small friezes in the viewport. The generation system works according to the principle of displaying the necessary previews. That is, all camera frames in the observer's field of view will be added to the render queue. Of course, the faster you read data from the disk, the faster it will be generated. The camera on which the cursor is hovered on is always added to render queue first"
+msgstr "Використовувати попередній перегляд зображень. Чи генерувати і відображувати попередній перегляд зображень у вікні перегляду. Це не надто збільшить кількість використаної відеопам'яті, проте може спричинити незначні переривання у роботі вікна перегляду."
+
+
+msgid "Dithering Strength"
+msgstr "Сила дизерингу"
+
+
+msgid "8x8 Bayer dithering strength. The resolution of the previews is rather small - 128x128 pixels. Of course, this add-on performs smoothing of the generated previews, but for a clearer understanding of what is shown, you can use dithering and mix it with the original preview"
+msgstr "Сила дизерингу Байера 8х8. Роздільна здатність зображень попереднього перегляду є доволі малою - 128х128 пікселів. Звісно, доповнення виконує згладжування згенерованих прев'ю, але для покращення читальності відображеного, можна використати дизеринг і змішати його з оригінальним прев'ю"
+
+
+msgid "Smooth Previews"
+msgstr "Згладжування Попереднього Перегляду"
+
+
+msgid "Use fast approximated anti-aliasing for preview images. Blender generates previews as Nearest, so readability is lost. This option does not add more data from the original image but performs smoothing and thus makes it more readable"
+msgstr "Використати спрощене згладжування для зображень попереднього перегляду. Blender створює їх без згладжування, тому іноді вони не читальні. Ця опція не додає ьільше даних з оригінального зображення, але робить попередній перегляд більш читальним"
+
+
+msgid "Cameras Transparency"
+msgstr "Прозорість Камер"
+
+
+msgid "Transparency of cameras in the viewport."
+msgstr "Прозорість камер у вікні перегляду"
+
+
+msgid "Tooltip Preview Size"
+msgstr "Розмір Прев'ю Підказки"
+
+
+msgid "The size of the preview image in the tooltip. Does not affect the quality of the displayed preview, only its size"
+msgstr "Розмір зображення попереднього перегляду в підказці. Не впливає на якість зображень попереднього перегляду, лише на їх розмір."
+
+
+msgid "Normal"
+msgstr "Нормальний"
+
+
+msgid "Standard size, 128x128 pixels"
+msgstr "Стандартний розмір, 128х128 пікселів"
+
+
+msgid "Large"
+msgstr "Збільшений"
+
+
+msgid "Stretched to double size"
+msgstr "Двічі розтягнутий стандартний розмір"
+
+
+msgid "Tooltip Position"
+msgstr "Розташування Підказки"
+
+
+msgid "The location of the pop-up tooltip with information about the camera data on which the cursor is hovered"
+msgstr "Розташування плаваючої підказки з інформацією про дані камери на яку наведено курсор"
+
+
+msgid "Static"
+msgstr "Статична"
+
+
+msgid "Appears near the brush and remains in the place where it appeared"
+msgstr "З'являється поблизу кисті і залишається в тому місці де з'явилась"
+
+
+msgid "Floating"
+msgstr "Плаваюча"
+
+
+msgid "Appears and follows the brush"
+msgstr "З'являється поблизу кисті і слідує за нею"
+
+
+msgid "Fixed"
+msgstr "Фіксована"
+
+
+msgid "Appears only at the bottom of the screen, in the middle"
+msgstr "З'являється внизу екрану, посередині"
+
+
+msgid "Software"
+msgstr "Програмне Забезпечення"
+
+
+msgid "Preset for software for which the operation will be performed"
+msgstr "Попередні налаштування для програмного забазпечення для якого буде виконано операцію"
+
+
+msgid "Reality Capture"
+msgstr ""
+
+
+msgid "Use presets for Reality Capture"
+msgstr "Використовувати попередні налаштування для Reality Capture"
+
+
+msgid "Select Framebuffer Scale"
+msgstr "Масштаб Буфера Кадру Виділення"
+
+
+msgid "Select framebuffer scale percentage, available in \"Developer Extras\" section. This exists mostly for optimization purposes, since the smaller size of framebuffer significantly reduces the use of both memory and CPU. The point is that the data from framebuffer will be read not only in one particular place, but also to determine which cameras in the field of view of the observer and require rendering of preview. Changing this option requires restarting the active main operator"
+msgstr "Масштаб у відсотках для буфера кадру виділення, доступний у вкладці \"Додатки Розробника\". Необхідно для оптимізації, оскільки менший розмір буфера кадру значно зменшує навантаження як процесора так і відеокарти. Основним є те що дані буде зчитано не лише в одній конкретній точці, але також і всі разом, аби з'ясувати які камери знаходяться в полі зору спостерігача і потребують оновлення щображень попереднього перегляду. Необхідно перезавантажити основний оператор доповнення якщо опцію було змінено."
+
+
+msgid "Log Level"
+msgstr "Рівень Логу"
+
+
+msgid "The level of the log that will be output to the console. For log to file, this level value will not change"
+msgstr "Рівень логу для консолі. Для логу в файл це значення рівня нічого не змінить"
+
+
+msgid "Debug"
+msgstr "Налагодження"
+
+
+msgid "Debug messages (low priority)"
+msgstr "Повідомлення налагодження (низький пріоритет)"
+
+
+msgid "Info"
+msgstr "Інформація"
+
+
+msgid "Informational messages"
+msgstr "Інформаційні повідомлення"
+
+
+msgid "Warning"
+msgstr "Попередження"
+
+
+msgid "Warning messages (medium priority)"
+msgstr "Попередження (середній пріоритет)"
+
+
+msgid "Error"
+msgstr "Помилки"
+
+
+msgid "Error messages (high priority)"
+msgstr "Повідомлення про помилки (високий пріоритет)"
+
+
+msgid "Critical"
+msgstr "Критичні"
+
+
+msgid "Critical error messages"
+msgstr "Повідомлення про критичні помилки"
+
+
+msgid "Scene"
+msgstr "Сцена"
+
+
+msgid "Unit"
+msgstr "Одиниці"
+
+
+msgid "Display units of camera parameters"
+msgstr "Одиниці відображення парамерів камери"
+
+
+msgid "Millimeters"
+msgstr "Міліметри"
+
+
+msgid "Camera parameters in millimeters"
+msgstr "Параметри камери у міліметрах"
+
+
+msgid "Pixels"
+msgstr "Пікселі"
+
+
+msgid "Camera parameters relative to image sizes in pixels"
+msgstr "Параметри камери відносно розміру зображення у пікселях"
+
+
+msgid "Highlight Cameras Orientation"
+msgstr "Показати Орієнтацію Камер"
+
+
+msgid "Use a different color for cameras whose images have landscape (including square) and portrait orientation"
+msgstr "Використати різні кольори для камер у яких зображення ландшафтної (включно з квадратними), чи портретної орієнтації"
+
+
+msgid "Cameras Landscape Orientation Color"
+msgstr "Колір Камер Ландшафтної Орієнтації"
+
+
+msgid "The color of the display of cameras in which the images have a landscape (including square) orientation"
+msgstr "Колір відображення камер з ландшафтною (включно з квадратними зображеннями) орієнтацією"
+
+
+msgid "Cameras Portrait Orientation Color"
+msgstr "Колір Камер Портретної Орієнтації"
+
+
+msgid "The color of the display of cameras in which the images have a portrait orientation"
+msgstr "Колір відображення камер з портретною орієнтацією"
+
+
+msgid "Highlight Projected Border"
+msgstr "Показати Спроектовану Рамку"
+
+
+msgid "Whether to highlight the borders of the frame of the projected image on the object"
+msgstr "Чи показувати рамку спроектораного на об'єкт зображення"
+
+
+msgid "Highlight Projected Border First Color"
+msgstr "Перший Колір Спроектованої Рамки"
+
+
+msgid "The first color that will be used to highlight the parts of the object that are outside of camera frustum"
+msgstr "Перший колір що буде використано для відображення частин об'єкта що знаходяться за межами зображення"
+
+
+msgid "Highlight Projected Border Second Color"
+msgstr "Другий Колір Спроектованої Рамки"
+
+
+msgid "The second color that will be used to highlight the parts of the object that are outside of camera frustum"
+msgstr "Другий колір що буде використано для відображення частин об'єкта що знаходяться за межами зображення"
+
+
+msgid "Highlight Projected Border Type"
+msgstr "Тип Рамки"
+
+
+msgid "The fill type of the highlighted area"
+msgstr "Тип заповнення відображення"
+
+
+msgid "Fill Color"
+msgstr "Колір заповнення"
+
+
+msgid "Single color outline"
+msgstr "Заповнення суцільним кольором"
+
+
+msgid "Checker"
+msgstr "Шашки"
+
+
+msgid "Checker pattern outline"
+msgstr "Заповнення шашками"
+
+
+msgid "Lines"
+msgstr "Лінії"
+
+
+msgid "Lines pattern outline"
+msgstr "Заповнення похилими лініями"
+
+
+msgid "Highlight Projected Border Facing"
+msgstr "Сторона Спроектованої Рамки"
+
+
+msgid "Which side of the polygons that are outside the frame of the projected image to display. Сan be useful for a scene where there is a closed space, for example a room or a street. At least one of the options should be selected"
+msgstr "Яку сторону граней що знаходяться за межами рамки спроектованого зображення буде відображено. Може бути корисним для сцен з замкнутим простором, наприклад, вулиці чи кімнати. Повинна бути обрана принаймні одна опція"
+
+
+msgid "Front"
+msgstr ""
+
+
+msgid "Show the front of polygons"
+msgstr "Показувати лицьову сторону граней"
+
+
+msgid "Back"
+msgstr ""
+
+
+msgid "Show the back of polygons"
+msgstr "Показувати зворотню сторону граней"
+
+
+msgid "Viewport Cameras Size"
+msgstr "Розмір Камер"
+
+
+msgid "The size of the cameras in the viewport"
+msgstr "Розмір камер у вікні перегляду"
+
+
+msgid "Current Image Viewport Transparency"
+msgstr "Прозорість поточного зображення у вікні перегляду"
+
+
+msgid "Transparency of the image when viewed from the camera"
+msgstr "Прозорість зображення коли дивитися з камери"
+
+
+msgid "Cage"
+msgstr "Регіон"
+
+
+msgid "Allows you to distinguish a certain region for work. Useful for large scenes with lots of cameras"
+msgstr "Дозволяє виокремити певний регіон для роботи. Корисно для великих сцен з великою кількістю камер"
+
+
+msgid "Cage Usage"
+msgstr "Використання Регіону"
+
+
+msgid "In which way the region for work affects the scene display"
+msgstr "В який спосіб регіон для роботи впливає на відображення сцени"
+
+
+#, fuzzy
+msgid "Cameras"
+msgstr "Камери"
+
+
+msgid "Hides the cameras"
+msgstr "Ховає камери"
+
+
+msgid "Previews"
+msgstr "Попередній Перегляд"
+
+
+msgid "Stops rendering of previews outside the region"
+msgstr "Припиняє рендеринг зображень попереднього перегляду за межами регіону"
+
+
+msgid "Mesh Preview"
+msgstr "Відображення Прев'ю Сітки"
+
+
+msgid "Hides the projection of the object outside the region"
+msgstr "Приховує проекцію об'єкту поза межами регіону"
+
+
+msgid "Window Manager"
+msgstr "Менеджер Вікон"
+
+
+msgid "Configure UDIM"
+msgstr "Налаштувати UDIM"
+
+
+msgid "The add-on uses some standard methods for importing, but in certain situations this creates incorrect data for the add-on to work with. If this option is activated, after importing the object, the materials for working with UDIM textures will be set, and after selecting the canvas, the image settings will be checked and adjusted"
+msgstr "Доповнення використовує деякі стандартні методи для імпорту, але в певних ситуаціях це створює некоректні для роботи з доповненням дані. Якщо дана опція активована то після імпорту об'єкту відбудеться налаштування матеріалів для роботи з UDIM текстурами, а після вибору полотна - перевірка і корегування налаштувань зображення"
+
+
+#~ msgid "Object"
+#~ msgstr "Об'єкт"
+

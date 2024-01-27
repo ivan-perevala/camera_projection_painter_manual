@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 BlenderHQ
+# This file is distributed under the same license as the Camera Projection Painter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Camera Projection Painter 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-25 16:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+"\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+msgid "General"
+msgstr "Загальне"
+
+msgid "Operators"
+msgstr "Оператори"
+
+msgid "Properties"
+msgstr "Властивості"
+
+msgid "Camera Projection Painter User Manual"
+msgstr "Користувацький Мануал Camera Projection Painter"
+
+msgid "Add-on for Blender for working with photo scans and photogrammetry."
+msgstr "Доповнення для Blender для роботи з фотосканами і фотограметрією"

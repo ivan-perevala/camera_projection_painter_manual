@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 BlenderHQ
+# This file is distributed under the same license as the Camera Projection Painter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Camera Projection Painter 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-25 16:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+"\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+msgid "Quick Start"
+msgstr "Початок Роботи"
+
+msgid ""
+"Standard and recommended methods of working with the add-on are described here. Of course, no one forces you to use "
+"them - here you can experiment at your own discretion."
+msgstr ""
+"Тут описано стандартні і рекомендовані методи роботи з доповненням. Звісно, ніхто не змушує використовувати саме "
+"їх - тут можна експериментувати на власний розсуд."
+
+msgid ""
+"The current version of the addon only supports **Reality Capture** files. It is obvious that we plan to expand the "
+"support of files of third-party software."
+msgstr ""
+"Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів "
+"сторонніх програм."
+
+msgid "Reality Capture"
+msgstr ""
+
+msgid "**Export camera data**"
+msgstr "**Експорт даних камер**"
+
+msgid "**Export object wire**"
+msgstr "**Експорт сітки об'єкту**"
+
+msgid ""
+"In order to simplify the task when importing the model to Blender, we export the model as a Wavefront (.obj) file. "
+"In newer versions of Blender (3.2+), this type of file is imported quickly and contains only the data needed to work"
+" with the addon. The important options here are:"
+msgstr ""
+"Для того щоб спростити собі завдання під час імпорту моделі до Blender, експортуємо модель як Wavefront (.obj) файл. "
+"У нових версіях Blender (3.2+) цей тип файлів імпортується швидко і містить лише необхідні для роботи з доповненням "
+"дані. Тут важливими опціями є:"
+
+msgid "``Coordinate System`` - ``Same as XMP``"
+msgstr ""
+
+msgid "``Transformation Preset`` - ``Blender``"
+msgstr ""
+
+msgid ""
+"These will be used :ref:`as presets for the <Software>` import from Reality Capture when :doc:`importing the scene "
+"<./ops/import-scene>`."
+msgstr ""
+"Їх буде використано :ref:`як попередні налаштування для <Software>` імпорту з Reality Capture під час :doc:`імпорту "
+"сцени <./ops/import-scene>`."
+
+msgid "**Setup Context**"
+msgstr "**Налаштування Контексту**"
+
+msgid ""
+"Next, you need to import this data. Start Blender and run :doc:`setup context <./ops/setup-context>`. There is "
+"nothing in the standard scene that will help us in our work, so this data can be deleted. This should also be done "
+"if, for example, you have finished adjusting one scene and want to move on to the next dataset. Therefore, the first"
+" question will be whether to clear the existing data:"
+msgstr ""
+"Далі необхідно імпортувати ці дані. Запускаємо Blender і запускаємо "
+":doc:`налаштування контексту <./ops/setup-context>`. В стандартній сцені немає нічого що допоможе нам у роботі, тому "
+"ці дані можна видалити. Це також необхідно зробити якщо наприклад, Ви закінчили корегувати одну сцену і хочете "
+"перейти до наступного набору даних. Тому у першу чергу буде питання чи очистити наявні дані:"
+
+msgid "Next, select the file containing the object wire and import it."
+msgstr "Далі - обираємо файл що містить сітку об'єкту і імпортуємо його."
+
+msgid "Then you need to choose the texture that we will adjust."
+msgstr "Потім треба обрати текстуру яку будемо коригувати."
+
+msgid ""
+"Next, we import camera data. This will allow you to use lens distortion without exporting distortion corrected "
+"images."
+msgstr ""
+"Далі - імпортуємо дані камер. Це дозволить використовувати дисторсію лінзи без експорту зображень з корекцією "
+"дисторсії."
+
+msgid "The next step will be linking the images to the camera objects."
+msgstr "Наступним кроком буде пов'язування зображень до об'єктів-камер."
+
+msgid "And after that you can start adjusting the texture."
+msgstr "І після цього можна починати коригувати текстуру."

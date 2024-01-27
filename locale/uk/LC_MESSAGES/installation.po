@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 BlenderHQ
+# This file is distributed under the same license as the Camera Projection Painter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Camera Projection Painter 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-03 13:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+"\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+msgid "Installation and Updates"
+msgstr "Встановлення і Оновлення"
+
+msgid "Installation"
+msgstr "Встановлення"
+
+msgid ""
+"You can install an addon `in a standard way "
+"<https://docs.blender.org/manual/en/latest/editors/preferences/addons.html#installing-add-ons>`_. There is nothing "
+"complicated here 😉"
+msgstr ""
+"Встановити доповнення можна `у стандартний спосіб "
+"<https://docs.blender.org/manual/en/latest/editors/preferences/addons.html#installing-add-ons>`_. Тут немає нічого "
+"складного 😉"
+
+msgid "Updates"
+msgstr "Оновлення"
+
+msgid ""
+"Everything is a little more complicated here, but not much. Obviously, most users only installing an addon once, "
+"after updating the Blender, and then when the current version stops working on newer or from some sources learns "
+"about new critical features. This addon has its own update system for users who do not use Git."
+msgstr ""
+"Тут вже все трохи складніше, але не набагато. Очевидно що більшість користувачів встановлює доповнення лише раз, "
+"після оновлення Blender, а потім - коли поточна версія перестає працювати на новіших або з якихось джерел дізнається "
+"про нові критичні для його роботи фічі. Це доповнення має власну систему оновлення для користувачів які не "
+"користуються Git."
+
+msgid ""
+"The updates are checked automatically when you open the Blender (don't worry, this is a background process, so it "
+"does not interfere with work). If the system detects an update, a message will appear in the user interface:"
+msgstr ""
+"Перевірка оновлень відбувається автоматично, коли Ви відкриваєте Blender (не хвилюйтеся, це фоновий процес, тому він "
+"не перешкоджає роботі). Якщо система виявить оновлення, в користувацькому інтерфейсі доповнення з'явиться "
+"повідомлення:"
+
+msgid "If you click on it then information about the update would appear:"
+msgstr "Якщо на нього натиснути то відкриється інформація про оновлення:"
+
+msgid "The upgrade is also in the standard method, but automatically:"
+msgstr "Встановлення оновлення відбувається також у стандартний спосіб, тільки автоматично:"
+
+msgid ""
+"Other update systems modify current files, instead the previous version will simply be disabled but will not be "
+"changed or deleted any files:"
+msgstr ""
+"Інші системи оновлень модифікують поточні файли, натомість тут попередню версію буде просто вимкнено, але не буде "
+"змінено чи видалено жодних файлів:"
+
+msgid ""
+"That is, if for some reason you want to return to the previous version, you must turn off the updated and only then "
+"- turn on the previous."
+msgstr ""
+"Тобто якщо з якихось причин бажаєте повернутися до попередньої версії, необхідно вимкнути оновлену і лише потім - "
+"увімкнути попередню."

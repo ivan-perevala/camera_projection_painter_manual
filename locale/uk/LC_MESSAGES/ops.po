@@ -1,0 +1,624 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 BlenderHQ
+# This file is distributed under the same license as the Camera Projection Painter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+
+
+msgid "Bind Camera Images"
+msgstr "Прив'язати Зображення"
+
+
+msgid "Associates images to cameras using names. Can be used both for all cameras present in the scene, and for the active camera (for the texture drawing mode, this is the scene's active camera, for object mode - the selected camera or the scene camera is also active if an object of a different type is selected)."
+msgstr "Пов'язує зображення до камер використовуючи назви. Може бути використаний як для всіх камер що присутні у сцені, так і для активної камери (для режиму малювання текстур це активна камера сцени, для об'єктного режиму - виділена камера або ж також активна камера сцени якщо виділено об'єкт іншого типу)."
+
+
+msgid "The search for images first of all always takes place among already open files, then, if no matches are found, among files in the selected directory. For this, the operator in the user interface has two launch modes. Import mode should be used if the required images are not yet open - in this case, it will be possible to choose a directory for searching for files, and if matches are found - the necessary images will be opened and linked to the cameras. Binding mode there is no fundamental difference with the import mode, but there is no directory selection here - if the necessary files have not yet been opened then the directory from which images or camera data were last imported will be used. This mode is useful if, for example, other images were manually selected and need to be linked again by name."
+msgstr "Пошук зображень в першу чергу завжди відбувається серед вже відкритих файлів, потім, якщо збігів не знайдено - серед файлів у обраній директорії. Для цього оператор в користувацькому інтерфейсі має два режими запуску. Режим імпорту потрібно використати якщо необхідні зображення ще не відкрито - в цьому випадку буде можливість обрати директорію для пошуку файлів, і якщо буде знайдено збіги - необхідні зображення буде відкрито і пов'язано до камер. Режим пов'язування кардинальної різниці з режимом імпорту не має, але тут немає вибору директорії - якщо необхідних файлів ще не відкрито то буде використано директорію з якої востаннє імпортували зображення або дані камер. Цей режим корисний якщо наприклад, вручну було обрано інші зображення і потрібно прив'язати їх знову за іменами."
+
+
+msgid "Comparison Options"
+msgstr "Опції Порівняння"
+
+
+msgid "Options for comparing names. At least one of the options must be selected for each compared type (object, image, etc.)"
+msgstr "Опції для порівняння назв. Принаймні одна з опцій повинна бути обрана для кожного з типів даних що порівнюються (об'єкт, зображення, тощо)"
+
+
+msgid "Ignore Letter Case"
+msgstr "Ігнорувати Реєстр"
+
+
+msgid "Ignore character register for matching"
+msgstr "Ігнорувати реєстр символів для пошуку збігів"
+
+
+msgid "Ignore Extensions"
+msgstr "Ігнорувати Розширення Файлів"
+
+
+msgid "Use name only, no file extension when searching"
+msgstr "Використовувати лише назви, не враховуючи розширення файлів під час пошуку"
+
+
+msgid "Use Object Name"
+msgstr "Назва Об'єкту"
+
+
+msgid "Use camera object name for comparison"
+msgstr "Використовувати назву об'єкта камери для порівняння"
+
+
+msgid "Use Camera Name"
+msgstr "Назва Камери"
+
+
+msgid "Use camera data name for comparison"
+msgstr "Використовувати назву камери для порівняння"
+
+
+msgid "Use Image Name"
+msgstr "Назва Зображення"
+
+
+msgid "Use image data-block name for comparison"
+msgstr "Використовувати назву блоку даних зображення для порівняння"
+
+
+msgid "Use Image File Name"
+msgstr "Назва Файлу Зображення"
+
+
+msgid "Use image file name for comparison"
+msgstr "Використовувати назву файлу зображення для порівняння"
+
+
+msgid "Update Cage"
+msgstr "Оновити Регіон"
+
+
+msgid "Set the region to work to the current scene bounds. The boundaries of the object and the position of all scene cameras are taken into account. It would be set automatically after :doc:`setting context <setup-context>`, but if it has been changed, you can re-calculate the region in this way."
+msgstr "Встановлює регіон для роботи до меж поточної сцени. Враховуються межі об'єкта та положення всіх камер сцени. Після :doc:`налаштування контексту <setup-context>` його буде встановлено автоматично, але якщо його було змінено то в такий спосіб можна оновити регіон."
+
+
+msgid "Create New Canvas"
+msgstr "Створити Нове Полотно"
+
+
+msgid "Available during the :doc:`canvas selection setup stage <ensure-canvas>`. This is a simple operator to create a new canvas with a size of 2048x2048 pixels. It can be used if there is no exported texture."
+msgstr "Доступний під час :doc:`стадії вибору полотна <ensure-canvas>`. Це простий оператор для створення нового полотна розміром 2048x2048 пікселі. Його можна використати якщо відсутня експортована текстура."
+
+
+msgid "To be fair, this operator allows to bypass certain limitations of the standard image creation operator, and its use is not mission-critical, but it can still be used in certain non-standard workflows."
+msgstr "Правду кажучи, цей оператор дозволяє обійти певні обмеження виконання стандартного оператора для створення зображень, а його використання не є критично важливим у роботі, проте в певних нестандартних робочих процесах все ж може використовуватися."
+
+
+msgid "Data Cleanup"
+msgstr "Очищення Даних"
+
+
+msgid ":doc:`Setup context <setup-context>` stage, during which you can clear existing scene data."
+msgstr "Стадія :doc:`налаштування контексту <setup-context>` під час якої можна очистити наявні дані сцени."
+
+
+msgid "If the file contains:"
+msgstr "Якщо у файлі є:"
+
+
+msgid "Cube"
+msgstr "Куб"
+
+
+msgid "Material"
+msgstr "Матеріал"
+
+
+msgid "Camera"
+msgstr "Камера"
+
+
+msgid "Lamp"
+msgstr "Лампа"
+
+
+msgid "that is, it is a standard scene, then it will be asked to :ref:`clean up this data <Cleanup Data>`."
+msgstr "тобто це стандартна сцена, то буде запропоновано :ref:`очистити ці дані <Cleanup Data>`."
+
+
+msgid "If there is only one \"Render Result\" image in the file, it will also be prompted to :ref:`cleanup images <Cleanup Images>`."
+msgstr "Якщо у файлі є лише одне зображення \"Render Result\" то також буде запропоновано :ref:`очистити зображення <Cleanup Images>`."
+
+
+msgid "If you want to leave everything as it is, you need to turn off all execution options and simply agree to execution - for example, if you need to complete the settings that were interrupted at one of the following stages."
+msgstr "Якщо потрібно залишити все як є, всі опції виконання потрібно вимкнути і просто погодитися на виконання - наприклад якщо необхідно завершити налаштування що було перервано на одній з наступних стадій."
+
+
+msgid "Cleanup Data"
+msgstr "Очистити Дані"
+
+
+msgid "Delete object, mesh, material, texture, light and camera data-blocks"
+msgstr "Видалити об'єкти, сітки, матеріали, текстури, лампи та блоки даних камер"
+
+
+msgid "Cleanup Images"
+msgstr "Очистити Зображення"
+
+
+msgid "Delete all image data-blocks"
+msgstr "Видалити всі блоки даних зображень"
+
+
+msgid "Ensure Canvas"
+msgstr "Налаштування Полотна"
+
+
+msgid "Stage of :doc:`context setup <setup-context>` during which you need to choose a canvas to paint on."
+msgstr "Стадія :doc:`налаштування контексту <setup-context>` під час якої необхідно обрати полотно для малювання."
+
+
+msgid "If you skip it and at the there is no canvas, then the addon work will continue but in a limited mode - obviously there will be nothing to paint on, but you can still work with import-export. If it is necessary to draw on an empty image and it is not previously in the file, the :doc:`creation operator <create-new-canvas>` is provided. To quickly select an image, you can use the :doc:`quick canvas selection <quick-select-canvas>` operator."
+msgstr "Якщо її пропустити і при цьому не буде встановленого полотна то робота доповнення продовжиться але в обмеженому режимі - очевидно що не буде на чому малювати, але все ще можна працювати з імпортом-експортом. Якщо ж необхідно намалювати на пустому зображенні а попередньо в файлі його немає, передбачено :doc:`оператор створення <create-new-canvas>`. Для швидкого вибору зображення можна скористатися оператором :doc:`швидкого вибору полотна <quick-select-canvas>`."
+
+
+msgid "Ensure Tool Settings"
+msgstr "Налаштування Інструменту"
+
+
+msgid "The last stage of setting up the work context (:doc:`setup-context`)."
+msgstr "Остання стадія налаштування контексту роботи (:doc:`setup-context`)."
+
+
+msgid "First, the availability of the drawing object will be checked. The active object must be a mesh with at least one polygon and an active UV map. If such an object is not available, the first visible scene object that matches these parameters will be selected. At the end of this check, the following options are possible:"
+msgstr "Спершу відбудеться перевірка наявності об'єкту для малювання. Активний об'єкт повинен бути сіткою, принаймні з одним полігоном і активною UV мапою. Якщо такий об'єкт відсутній то буде обрано перший з видимих об'єктів сцени що відповідають цим параметрам. Наприкінці цієї перевірки можливі такі варіанти:"
+
+
+msgid "Object found - execution will continue."
+msgstr "Об'єкт знайдено - відбудеться продовження виконання."
+
+
+msgid "The object is found, but it has no polygons - a message about this will be reported and execution will be interrupted."
+msgstr "Об'єкт знайдено, але у нього відсутні полігони - буде висвітлено повідомлення про це і виконання буде перервано."
+
+
+msgid "The object is found, it has at least one polygon, but there is no active UV map - execution will continue, but in a limited mode - such a message will be reported. Obviously, editing the canvas in this case will not work, but this mode of operation can be useful if, for example, you only need to change the parameters of certain cameras and export camera data back to third-party software."
+msgstr "Об'єкт знайдено, в нього є принаймні один полігон, але відсутня активна UV мапа - виконання буде продовжено, але у обмеженому режимі - таке буде висвітлено повідомлення. Очевидно що редагувати полотно у такому разі не вийде, але цей режим роботи може бути корисним якщо наприклад, потрібно лише змінити параметри певних камер і експортувати дані камер назад до стороннього програмного забезпечення."
+
+
+msgid "If the execution continues, then the tool and the scene will be set up. This section can be used to understand how you can set up a work context manually:"
+msgstr "У разі продовження виконання далі відбудеться налаштування інструментів і сцени. Ця секція може бути використана щоб розуміти як можна налаштувати контекст роботи вручну:"
+
+
+msgid "The work mode will be changed to texture paint."
+msgstr "Режим роботи буде змінено на малювання текстури."
+
+
+msgid "The Clone tool will be selected."
+msgstr "Буде обрано інструмент \"Клонування\"."
+
+
+msgid "Texture drawing mode will be changed to \"Single Image\"."
+msgstr "Режим малювання текстури буде змінено на \"Одне Зображення\"."
+
+
+msgid "The use of the clone layer will be enabled."
+msgstr "Буде ввімкнено використання шару клонування."
+
+
+msgid "At the end of the execution, the operator will change the lighting type in all viewers of the current program window to flat - this way of displaying the object is best suited for editing textures."
+msgstr "Наприкінці виконання оператор змінить тип освітлення у всіх переглядачах поточного вікна програми на пласке - цей спосіб відображення об'єкту найкраще підходить для редагування текстур."
+
+
+msgid "Next, the main workflow of the add-on will be launched - it is important that there is at least one camera in the scene, even if it is inactive. During work, the main operator will independently ensure that an active camera is set - it is from it that the projection will take place."
+msgstr "Далі відбудеться запуск основного робочого процесу доповнення - важливо аби у сцені була принаймні одна камера, навіть неактивна. Основний оператор під час роботи самостійно буде слідкувати щоб була встановлена активна камера - саме з неї буде відбуватися проекція."
+
+
+msgid "Export Cameras"
+msgstr "Експортувати Камери"
+
+
+msgid "Exports camera data to files of third-party software."
+msgstr "Експортує дані камер в файли сторонніх програм."
+
+
+msgid "The addon stores camera data with double precision, according to the IEEE-754 standard, so files imported from third-party software can be exported back without loss of precision."
+msgstr "Доповнення зберігає дані камер з подвійною точністю, відповідно до стандарту IEEE-754, тому файли які було імпортовано зі сторонніх програм можна експортувати назад без втрати точності."
+
+
+msgid "For export, you need to choose the path and name of the file, and for some formats (for example, Reality Capture Metadata (XMP), which writes each camera in a separate file) - a directory. It is also necessary to choose the file format and the name source."
+msgstr "Для експорту необхідно обрати шлях і назву файлу, а для деяких форматів (наприклад, Reality Capture Метадані (XMP) що записує кожну камеру в окремий файл) - директорію. Також необхідно обрати формат файлу і джерело назв."
+
+
+msgid "The current version of the add-on only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software."
+msgstr "Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
+
+
+msgid "Files supported by the current version of the addon:"
+msgstr "Файли які підтримує поточна версія доповнення:"
+
+
+msgid "**Reality Capture**"
+msgstr ""
+
+
+msgid "Metadata (XMP)"
+msgstr "Метадані (XMP)"
+
+
+msgid "Internal/External camera parameters"
+msgstr "Внутрішні/Зовнішні параметри камер"
+
+
+msgid "Comma-separated Name, X, Y, Z"
+msgstr "Розділені Комою Назва, X, Y, Z"
+
+
+msgid "Comma-separated Name, X, Y, Z, Heading, Pitch, Roll"
+msgstr "Розділені Комою Назва, X, Y, Z, Никання, Тангаж, Крен"
+
+
+msgid "Comma-separated Name, X, Y, Z, Omega, Phi, Kappa"
+msgstr "Розділені Комою Назва, X, Y, Z, Омега, Фі, Каппа"
+
+
+msgid "Regarding file format selection, you can simply select an existing file to overwrite and the export format will be selected automatically, according to the existing file format. It should be noted here that if an existing file is selected, then to export to another file format, it is necessary to remove the selection from the file and clear the file name field, only then it will be possible to choose another format."
+msgstr "Стосовно вибору формату файлу можна просто обрати наявний файл для перезапису і формат експорту буде обрано автоматично, відповідно до формату наявного файлу. Тут варто зазначити що якщо обрано наявний файл то для експорту в інший формат файлу необхідно зняти виділення з файлу і очистити поле назви файлу, лише потім можна буде обрати інший формат."
+
+
+msgid "As for choosing the source of the camera names in the exported file, it depends on the dataset of the current scene. Most of the time, the standard settings are enough (use the name of the camera object), but in certain non-standard situations, you need to specify it yourself."
+msgstr "Що стосується вибору джерела назв камер у експортованому файлі, то це залежить від набору даних поточної сцени. Найчастіше достатньо стандартних налаштувань (використовувати назву об'єкта камери), але в певних нестандартних ситуаціях це потрібно вказати самостійно."
+
+
+msgid "Calibration Groups"
+msgstr "Групи Калібрації"
+
+
+msgid "Select to export the information on the created calibration groups for Reality Capture (XMP)"
+msgstr "Чи експортувати інформацію про групи калібрації для Reality Capture (XMP)"
+
+
+msgid "Include Editor Options"
+msgstr "Включити Опції Редактора"
+
+
+msgid "Export editor states, e.g. enabled/disabled flags for texturing, meshing, and similar for Reality Capture (XMP)"
+msgstr "Експортувати прапори редактора, наприклад опції що вказують чи використовувати камеру для створення сітки або текстури для Reality Capture (XMP)"
+
+
+msgid "Export Mode"
+msgstr "Режим Експорту"
+
+
+msgid "Depending on how much you trust your registration, you can select the following options or you can also choose not to export camera poses for Reality Capture (XMP)"
+msgstr "Залежно від того наскільки Ви довіряєте реєстрації, можна обрати відповідні опції або ж не експортувати позиції камер для Reality Capture (XMP)"
+
+
+msgid "Do Not Export"
+msgstr "Не Експортувати"
+
+
+msgid "Do not export camera poses"
+msgstr "Не експортувати позиції камер"
+
+
+msgid "Draft"
+msgstr "Чернетка"
+
+
+msgid "This will treat poses as an imperfect draft to be optimized in the future. The draft mode functions also as a flight log"
+msgstr "Позначає позиції як не досконалі чернетки що потрібно оптимізувати в майбутньому. Режим чернетки також може використовуватися як лог польоту"
+
+
+msgid "Exact"
+msgstr "Чистовик"
+
+
+msgid "If you trust the alignment absolutely. By choosing this option, you are saying to the application that poses are precise, but the global position, orientation, and scale is not known"
+msgstr "Якщо Ви повністю довіряєте вирівнюванню. Обираючи цю опцію, Ви вказуєте аплікації що позиції є прецезійними, але глобальні положення, орієнтація і масштаб не відомі"
+
+
+msgid "Locked"
+msgstr "Заблокований Чистовик"
+
+
+msgid "This is the same as the exact option with the difference that the camera position and calibration will not be changed, when locked"
+msgstr "Те ж саме що і чистовик але положення камер і параметри калібрації не буде змінено"
+
+
+msgid "Calibration Group"
+msgstr "Група Калібрації"
+
+
+msgid "By defining a group for Reality Capture (XMP) we state that all images in this group have the same calibration properties, e.g. the same focal length, the same principal point. Use \"-1\" if you do not want to group the parameters"
+msgstr "Групою для Reality Capture (XMP) ми зазначаємо що у всіх зображень у цій групі однакові властивості калібрації, тобто однакова фокальна відстань, однакове відхилення від центру, тощо. Використовуйте \"-1\" якщо не потрібно групувати параметри"
+
+
+msgid "Distortion Group"
+msgstr "Група Дисторсії"
+
+
+msgid "By defining a group for Reality Capture (XMP) we state that all images in this group have the same lens properties, e.g. the same lens distortion coefficients. Use \"-1\" if you do not want to group the parameters"
+msgstr "Групою для Reality Capture (XMP) ми зазначаємо що у всіх зображень у цій групі однакові властивості дисторсії, тобто однакові коефіцієнти дисторсії, тощо. Використовуйте \"-1\" якщо не потрібно групувати параметри"
+
+
+msgid "In Texturing"
+msgstr "Для Текстури"
+
+
+msgid "Whether to use an image to create an object texture for Reality Capture (XMP)"
+msgstr "Чи використовувати зображення для створення текстури об'єкта для Reality Capture (XMP)"
+
+
+msgid "In Meshing"
+msgstr "Для Сітки"
+
+
+msgid "Whether to use an image to create the object mesh data for Reality Capture (XMP)"
+msgstr "Чи використовувати зображення для створення сітки об'єкта для Reality Capture (XMP)"
+
+
+msgid "Number of Cameras"
+msgstr "Кількість Камер"
+
+
+msgid "Write number of cameras into a file for Reality Capture CSV-like file formats"
+msgstr "Записати кількість камер у файл для Reality Capture CSV-подібних форматів файлу"
+
+
+msgid "Forward"
+msgstr "Вперед"
+
+
+msgid "Axis forward"
+msgstr "Вісь Вперед"
+
+
+msgid "X Forward"
+msgstr "X Вперед"
+
+
+msgid "Use the global X axis as the forward direction"
+msgstr "Використати глобальну вісь X як напрямок вперед"
+
+
+msgid "Y Forward"
+msgstr "Y Вперед"
+
+
+msgid "Use the global Y axis as the forward direction"
+msgstr "Використати глобальну вісь Y як напрямок вперед"
+
+
+msgid "Z Forward"
+msgstr "Z Вперед"
+
+
+msgid "Use the global Z axis as the forward direction"
+msgstr "Використати глобальну вісь Z як напрямок вперед"
+
+
+msgid "Negative X Forward"
+msgstr "Від'ємна X Вперед"
+
+
+msgid "Use the negative global X axis as the forward direction"
+msgstr "Використати від'ємну глобальну вісь X як напрямок вперед"
+
+
+msgid "Negative Y Forward"
+msgstr "Від'ємна Y Вперед"
+
+
+msgid "Use the negative global Y axis as the forward direction"
+msgstr "Використати від'ємну глобальну вісь Y як напрямок вперед"
+
+
+msgid "Negative Z Forward"
+msgstr "Від'ємна Z Вперед"
+
+
+msgid "Use the negative global Z axis as the forward direction"
+msgstr "Використати від'ємну глобальну вісь Z як напрямок вперед"
+
+
+msgid "Up"
+msgstr "Вгору"
+
+
+msgid "Axis up"
+msgstr "Вісь Вгору"
+
+
+msgid "X Up"
+msgstr "X Вгору"
+
+
+msgid "Use the global X axis as the up direction"
+msgstr "Використати глобальну вісь X як напрямок вгору"
+
+
+msgid "Y Up"
+msgstr "Y Вгору"
+
+
+msgid "Use the global Y axis as the up direction"
+msgstr "Використати глобальну вісь Y як напрямок вгору"
+
+
+msgid "Z Up"
+msgstr "Z Вгору"
+
+
+msgid "Use the global Z axis as the up direction"
+msgstr "Використати глобальну вісь Z як напрямок вгору"
+
+
+msgid "Negative X Up"
+msgstr "Від'ємна X Вгору"
+
+
+msgid "Use the negative global X axis as the up direction"
+msgstr "Використати від'ємну глобальну вісь X як напрямок вгору"
+
+
+msgid "Negative Y Up"
+msgstr "Від'ємна Y Вгору"
+
+
+msgid "Use the negative global Y axis as the up direction"
+msgstr "Використати від'ємну глобальну вісь Y як напрямок вгору"
+
+
+msgid "Negative Z Up"
+msgstr "Від'ємна Z Вгору"
+
+
+msgid "Use the negative global Z axis as the up direction"
+msgstr "Використати від'ємну глобальну вісь Z як напрямок вгору"
+
+
+msgid "Import Cameras"
+msgstr "Імпортувати Камери"
+
+
+msgid "The :doc:`setup context stage <setup-context>` and an independent operator for importing extrinsic and :doc:`intrinsic <../props/cameraprops>` camera parameters."
+msgstr "Стадія :doc:`налаштування контексту <setup-context>` і самостійний оператор для імпорту зовнішніх і :doc:`внутрішніх <../props/cameraprops>` параметрів камер."
+
+
+msgid "For import, you need to select one or more files - their type will be determined automatically. Unlike :doc:`scene importer <import-scene>`, the file type will be determined not only by the extension - as soon as the files are selected, they will be partially read and checked. The check will be based on the key characteristics of various file types of third-party software - it can be the first line with a file description or simply the number of elements in a line (for character-separated formats). For ``XML`` files, certain keys will be found in the tree and so on."
+msgstr "Для імпорту необхідно обрати один або декілька файлів - їх тип буде визначено автоматично. На відміну від :doc:`імпортера сцени <import-scene>` тип файлу буде визначено не лише за розширенням - як тільки буде обрано файли їх буде частково зчитано і перевірено. Перевірка відбудеться за ключовими характеристиками різних типів файлів сторонніх програм - це може бути перший рядок з описом файлу або ж просто кількість елементів у рядку (для форматів розділених символом). Для ``XML`` файлів буде знайдено певні ключі в дереві і так далі."
+
+
+msgid "The current version of the addon only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software."
+msgstr "Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
+
+
+msgid "Import Scene"
+msgstr "Імпорт Сцени"
+
+
+msgid "Stage :doc:`setting up the context <setup-context>` as well as an independent operator. In fact, it's just a wrapper for standard import operators with presets."
+msgstr "Стадія :doc:`налаштування контексту <setup-context>` а також самостійний оператор. Фактично, це лише обгортка для стандартних операторів імпорту з попередніми налаштуваннями."
+
+
+msgid "If the presets are not suitable for any reason, you can always import the scene manually and skip this stage when setting up the context - just do not select any file."
+msgstr "Якщо попередні налаштування з будь-яких причин не підходять, завжди можна імпортувати сцену вручну і під час налаштування контексту пропустити виконання цієї стадії - для цього потрібно просто не обрати жодного файлу."
+
+
+msgid "So, in order to use this operator, you need to select a file to import and select the default settings for :ref:`third-party <Software>` files. This setting is saved as addon preference so you can do it once."
+msgstr "Отже, для того аби скористатися цим оператором необхідно обрати файл для імпорту і обрати попередні налаштування для файлів :ref:`сторонніх програм <Software>`. Ці налаштування зберігаються як користувацькі налаштування доповнення тому можна зробити це один раз."
+
+
+msgid "The current version of the addon only has presets for **Reality Capture**. It is obvious that we plan to expand the support of files of third-party software."
+msgstr "Поточна версія доповнення має лише попередні налаштування для **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
+
+
+msgid "Next, the file type will be automatically determined using its extension. Files supported by the current version of the addon:"
+msgstr "Далі буде автоматично визначено тип файлу використовуючи його розширення. Файли які підтримує поточна версія доповнення:"
+
+
+msgid "``Wavefront (.obj)``, ``Collada (.dae)`` - used built-in Blender importers."
+msgstr "``Wavefront (.obj)``, ``Collada (.dae)`` - використовуються вбудовані імпортери Blender."
+
+
+msgid "``Autodesk (*.fbx)`` - the standard FBX file import addon will be used, so it should be enabled."
+msgstr "``Autodesk (*.fbx)`` - буде використано стандартне доповнення імпорту FBX файлів, тому воно повинно бути увімкнено."
+
+
+msgid "If these requirements are not met, the files will be hidden in the file manager and refused import. However, this is more information for users who use their own Blender builds."
+msgstr "Якщо ці вимоги не виконано то файли буде приховано в файловому менеджері і відмовлено в імпорті. Втім, це інформація більше для користувачів що використовують власні збірки Blender."
+
+
+msgid "Quick Select Canvas"
+msgstr "Швидкий Пошук Полотна"
+
+
+msgid "Available during the :doc:`canvas selection stage <ensure-canvas>`."
+msgstr "Доступний під час :doc:`стадії вибору полотна <ensure-canvas>`."
+
+
+msgid "Often the name of the exported image is similar to the name of the exported object or simply after importing into Blender it is specified as a texture in one of the materials of the imported object."
+msgstr "Часто назви експортованого зображення схожі на назву експортованого об'єкту або просто після імпорту в Blender воно вказане як текстура у одному з матеріалів імпортованого об'єкту."
+
+
+msgid "Therefore, a search is first performed among the materials of the imported object - if the material contains an image texture node, this image will be proposed. Perhaps this is a fairly simple way of searching, but it is the fastest, so it is a priority."
+msgstr "Тому спершу відбувається пошук серед матеріалів імпортованого об'єкту - якщо в матеріалі є текстурна нода зображення, буде запропоновано саме це зображення. Можливо, це доволі простий спосіб пошуку, але найшвидший, тому він є пріорітетним."
+
+
+msgid "Most often, the first method allows you to find a suitable image, if not - a search for an image with a similar name will be carried out among all those that are currently open. Their number can be quite large, so this method is relatively slow. Here, the name of the object will be used for the search and the possible UDIM pattern of the image will be taken into account."
+msgstr "Найчастіше перший метод дозволяє знайти відповідне зображення, якщо ж ні - буде проведено пошук схожого за назвою зображення серед усіх що на поточний момент відкриті. Їх кількість може бути доволі великою, тому цей спосіб відносно повільний. Тут для пошуку буде використано назву об'єкту і враховано можливий паттерн UDIM зображення."
+
+
+msgid "In any case, the operator is designed to speed up trivial tasks, and you can always choose the image manually. For example, there is an option when almost the desired image was offered, you can confirm a quick selection and then scroll a little through the list of images to the desired one."
+msgstr "У будь-якому разі, оператор призначений для прискорення виконання тривіальних завдань, і завжди можна обрати зображення вручну. Наприклад, можливим є варіант коли було запропоновано майже те яке потрібно зображення, можна підтвердити швидкий вибір і далі трохи прогортати список зображень до необхідного."
+
+
+msgid "Remove Image from Bind History"
+msgstr "Усунути Зображення з Історії Пов'язаних"
+
+
+msgid "Removes an image from the :ref:`bind history <Bind History>`. You can delete any image, even the current image, because the history of related images does not affect it."
+msgstr "Видаляє зображення з :ref:`історії пов'язаних зображень <Bind History>`. Видалити можна будь-яке, навіть поточне зображення, оскільки історія пов'язаних зображень на нього не впливає."
+
+
+msgid "Setup Context"
+msgstr "Налаштувати Контекст"
+
+
+msgid "Sequential setting of the context for work - step by step the scene and necessary data will be imported and the parameters of the tools will be configured."
+msgstr "Послідовне налаштування контексту для роботи - крок за кроком буде імпортовано сцену і необхідні дані та налаштовано параметри інструментів."
+
+
+msgid "Execution is divided into stages, each of which is a separate call of automation operators. Each of the execution stages can be skipped if it is not needed in the current situation and go to the next one, or cancel its execution and thus complete the context setting at the current stage."
+msgstr "Виконання поділено на стадії, кожна з яких - окремий виклик операторів автоматизації. Кожну зі стадій виконання можна пропустити, якщо вона не потрібна в поточній ситуації і перейти до наступної, або ж скасувати її виконання і таким чином завершити налаштування контексту на поточній стадії."
+
+
+msgid "The sequence of execution stages is as follows:"
+msgstr "Послідовність стадій виконання така:"
+
+
+msgid ":doc:`data-cleanup`"
+msgstr ""
+
+
+msgid ":doc:`import-scene`"
+msgstr ""
+
+
+msgid ":doc:`ensure-canvas`"
+msgstr ""
+
+
+msgid ":doc:`quick-select-canvas`"
+msgstr ""
+
+
+msgid ":doc:`create-new-canvas`"
+msgstr ""
+
+
+msgid ":doc:`import-cameras`"
+msgstr ""
+
+
+msgid ":doc:`bind-camera-images`"
+msgstr ""
+
+
+msgid ":doc:`ensure-tool-settings`"
+msgstr ""
+
+
+msgid "Show Preferences"
+msgstr "Відкрити Налаштування"
+
+
+msgid "Quick access to addon user preferences."
+msgstr "Швидкий доступ до користувацьких налаштувань доповнення."
+
+
+msgid "Obviously, the operator itself does not make much sense, since the custom settings are not difficult to reach in the usual way, but during operation it may be necessary to disable or enable some options, for example :ref:`Use Mesh Preview` or :ref:`Use Previews` will continue to work in this mode. It is also worth noting that in the user settings there is a link to the folder with the addon logs, which can tell a lot about a possible issue, so it will also help to get the current log faster and fix the situation."
+msgstr "Очевидно що сам по собі оператор не має багато сенсу, оскільки до користувацьких налаштувань не складно дістатися звичайним способом, але під час роботи може виникнути необхідність вимкнути або ввімкнути деякі опції, наприклад, :ref:`Use Mesh Preview` або :ref:`Use Previews` і далі працювати в такому режимі. Також варто зауважити що в користувацьких налаштуваннях посилання на теку з логами доповнення, які можуть багато чого розповісти про можливу неполадку, тож це також допоможе швидше отримати поточний лог і виправити ситуацію."
+

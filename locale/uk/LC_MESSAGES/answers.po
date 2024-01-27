@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023 BlenderHQ
+# This file is distributed under the same license as the Camera Projection Painter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Camera Projection Painter 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-09 07:37+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+"\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+msgid "Answers"
+msgstr "Відповіді"
+
+msgid ""
+"Here you can find answers to questions previously asked by users. We respect the privacy of the author and the "
+"source of the question is not indicated, but the questions themselves are verbatim, with minor editing (for example,"
+" the greeting was removed)."
+msgstr ""
+"Тут можна знайти відповіді на питання, які раніше поставили користувачі. Ми шануємо приватність тому не автора і "
+"джерела питання не вказано але самі питання є дослівними, з незначним редагуванням (наприклад, усунено привітання)"
+
+msgid ""
+"If you yourself have questions, you can ask them through the `tracker on GitHub "
+"<https://github.com/BlenderHQ/camera_projection_painter/issues/new/choose>`_ (this is the most official way) or "
+"through social networks."
+msgstr ""
+"Якщо у вас самих є питання, їх можна поставити через `трекер на GitHub "
+"<https://github.com/BlenderHQ/camera_projection_painter/issues/new/choose>`_ (це найбільш офіційний спосіб) або ж "
+"через соціальні мережі."
+
+msgid ""
+"**In the github description you say \"you can adjust the texture and camera data\", what do you mean by that? I'm "
+"interested in what this addon is, but it's hard to piece the meaning together from the descriptions**"
+msgstr ""
+
+msgid "It allows you to paint over the texture of the reconstructed object with a clone brush from the original photo."
+msgstr ""
+
+msgid "**Does it support multicamera rigs with images of different w x h sizes ?**"
+msgstr ""
+
+msgid ""
+"Yes, it supports.  Here, of course, it should be noted that the sensor of imported cameras matters, and this will "
+"affect whether the distortion of the lens will be correctly calculated, because Blender strictly separates the "
+"height and width of the sensor, but the import operators automatically set its value. But yes, working with "
+"different image resolutions is one of the main purposes of the add-on. For example, if a camera with the largest "
+"resolution is installed vertically in the facial rig and is aimed directly at the face, it makes sense to add "
+"details from it"
+msgstr ""
+
+msgid "**Can you input intrinsics via file?**"
+msgstr ""
+
+msgid ""
+"Yes, I can and you probably can too 😉 I've also written some documentation for the add-on, so I think that might "
+"help."
+msgstr ""
+
+msgid ""
+"But in general yes, of course you can import/export internal/external parameters of cameras - this significantly "
+"reduces the size of the data needed to work with the scan texture."
+msgstr ""
