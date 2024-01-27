@@ -2760,3 +2760,29 @@ msgstr ""
 #~ msgid "Hides the projection of the object outside the region"
 #~ msgstr ""
 
+
+#~ msgid "Use presets for Agisoft Metashape"
+#~ msgstr ""
+
+
+#~ msgid "Photogrammetry textures refinement"
+#~ msgstr ""
+
+
+#~ msgctxt "Preferences"
+#~ msgid "Agisoft Metashape"
+#~ msgstr ""
+
+
+#~ msgid "Tool Settings > Camera Painter"
+#~ msgstr ""
+
+
+#~ msgid "Bind History"
+#~ msgstr ""
+
+
+#~ msgctxt "IOFormat"
+#~ msgid "Omega, Phi, Kappa (.txt)"
+#~ msgstr ""
+

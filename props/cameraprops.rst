@@ -129,9 +129,3 @@ Image
 The image that was previously attached to this camera
 
 
-Reality Capture Properties
-==========================
-
-The properties that were imported from Reality Capture.They will be used for export
-
-

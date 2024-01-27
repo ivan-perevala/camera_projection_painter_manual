@@ -7,48 +7,28 @@ The addon stores camera data with double precision, according to the IEEE-754 st
 
 For export, you need to choose the path and name of the file, and for some formats (for example, Reality Capture Metadata (XMP), which writes each camera in a separate file) - a directory. It is also necessary to choose the file format and the name source.
 
-.. note::
-
-    The current version of the add-on only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software.
-
 Files supported by the current version of the addon:
 
 * **Reality Capture**
 
-* Metadata (XMP)
-* Internal/External camera parameters
-* Comma-separated Name, X, Y, Z
-* Comma-separated Name, X, Y, Z, Heading, Pitch, Roll
-* Comma-separated Name, X, Y, Z, Omega, Phi, Kappa
+  * Metadata (XMP)
+  * Internal/External camera parameters
+  * Comma-separated Name, X, Y, Z
+  * Comma-separated Name, X, Y, Z, Heading, Pitch, Roll
+  * Comma-separated Name, X, Y, Z, Omega, Phi, Kappa
+
+* **Agisoft Metashape**
+
+  * Omega Phi Kappa (.txt)
 
 Regarding file format selection, you can simply select an existing file to overwrite and the export format will be selected automatically, according to the existing file format. It should be noted here that if an existing file is selected, then to export to another file format, it is necessary to remove the selection from the file and clear the file name field, only then it will be possible to choose another format.
 
 As for choosing the source of the camera names in the exported file, it depends on the dataset of the current scene. Most of the time, the standard settings are enough (use the name of the camera object), but in certain non-standard situations, you need to specify it yourself.
 
+Number of Cameras
+=================
 
-.. Експортує дані камер в файли сторонніх програм.
-
-.. Доповнення зберігає дані камер з подвійною точністю, відповідно до стандарту IEEE-754, тому файли які було імпортовано зі сторонніх програм можна експортувати назад без втрати точності.
-
-.. Для експорту необхідно обрати шлях і назву файлу, а для деяких форматів (наприклад, Reality Capture Метадані (XMP) що записує кожну камеру в окремий файл) - директорію. Також необхідно обрати формат файлу і джерело назв.
-
-.. .. note::
-
-..     Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм.
-
-.. Files supported by the current version of the addon:
-
-.. * **Reality Capture**
-
-..   * Метадані (XMP)
-..   * Внутрішні/зовнішні параметри камер
-..   * Розділені комою Назва, X, Y, Z
-..   * Розділені комою Назва, X, Y, Z, Никання, Тангаж, Крен
-..   * Розділені комою Назва, X, Y, Z, Омега, Фі, Каппа
-
-.. Стосовно вибору формату файлу можна просто обрати наявний файл для перезапису і формат експорту буде обрано автоматично, відповідно до формату наявного файлу. Тут варто зазначити що якщо обрано наявний файл то для експорту в інший формат файлу необхідно зняти виділення з файлу і очистити поле назви файлу, лише потім можна буде обрати інший формат.
-
-.. Що стосується вибору джерела назв камер у експортованому файлі, то це залежить від набору даних поточної сцени. Найчастіше достатньо стандартних налаштувань (використовувати назву об'єкта камери), але в певних нестандартних ситуаціях це потрібно вказати самостійно.
+Write number of cameras into a file for Reality Capture CSV-like file formats
 
 Calibration Groups
 ==================
@@ -96,11 +76,6 @@ In Meshing
 ==========
 
 Whether to use an image to create the object mesh data for Reality Capture (XMP)
-
-Number of Cameras
-=================
-
-Write number of cameras into a file for Reality Capture CSV-like file formats
 
 Forward
 =======

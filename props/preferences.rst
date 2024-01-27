@@ -59,6 +59,9 @@ Preset for software for which the operation will be performed
 Reality Capture
  Use presets for Reality Capture
 
+Agisoft Metashape
+ Use presets for Agisoft Metashape
+
 Select Framebuffer Scale
 ========================
 

@@ -42,36 +42,6 @@ Image
 
 Pixel data (obviously). It is important here that for Blender an image is just a block of data, of which we are primarily interested in its name and file path.
 
-.. Тут описано типи блоків даних з якими працює доповнення. Коли мова йде про поняття і визначення типів даних то в Blender, на відміну від фотограметричних програм, все трохи складніше. У нас є зображення на диску - його було використано для реконструкції сцени, а можливо, відкрито в поточному ``.blend`` файлі (а можливо, навіть запаковано в файл, як архів). Також є експортовані з фотограметричних програм файли з даними камер, з яких ці кадри було знято - тут є дані про положення камер у просторі, про довжину лінзи, тип і параметри дисторсії лінзи, тощо.
-
-.. Для того аби пов'язати все разом для роботи в Blender, використовуючи стандартні блоки даних використовується наступна ієрархія:
-
-.. ::
-
-..     Сцена
-..     └── Об'єкт типу "Камера"
-..         └── Камера (Блок даних)
-..             └── Зображення
-
-.. Зрозуміло що в сцені у нас декілька об'єктів-камер, але у кожного з них можуть бути як різні, так і один і той самий блок даних камери - це стосується і просто Blender, без цього доповнення. Доповнення додає в стандартну ієрархію пов'язане до блоку даних камери зображення.
-
-.. Отже, який блок даних Blender яку інформацію зберігає?
-
-.. Об'єкт
-.. ======
-
-.. Дані про зовнішні параметри. Це положення і орієнтація камери у просторі.
-
-.. Камера (Блок даних)
-.. ===================
-
-.. Дані про :doc:`внутрішні <../props/cameraprops>` параметри камери. Це інформація про об'єктив, лінзу, а також деякі додаткові параметри для імпорту-експорту зі сторонніх програм.
-
-.. Зображення
-.. ==========
-
-.. Піксельні дані (очевидно:)). Тут важливим є те що для Blender зображення - це просто блок даних, з яких нас цікавить в першу чергу його назва і шлях до файлу.
-
 ------------------------------------------------------------------------------------------------------------------------
 
 Names Comparison
@@ -82,33 +52,23 @@ Now that there is an understanding of the basic concepts, let's move on to the t
 * :ref:`Camera objects <data-blocks-object>` that have been imported, for example, via the ``FBX`` format, will most often have image filenames, but possibly no file extension. The objects that were created using the :doc:`import camera operator <./ops/import-cameras>` will not have a file extension in the name.
 
 .. image:: ./images/camera-name.jpg
+    :align: center
 
 * :ref:`Camera data blocks <data-blocks-camera>` most often have standard names (`Camera`, `Camera.001`, ...) after importing the scene, and probably - after :doc:`importing camera data <./ops/import-cameras>`, but for some file formats, such as ``FBX`` exported from Reality Capture, it will be the name of the image without the file extension.
 
 .. image:: ./images/cam-name.jpg
+    :align: center
 
 * :ref:`Images <data-blocks-image>` are most often named the same as image files, but there are quite possible situations when the image data block in Blender has a completely different name (for example, if you open one image or create a generated one and then specify the path to another for the same data block).
 
 .. image:: ./images/image-name.jpg
+    :align: center
 
 * :ref:`The image file path <data-blocks-image>` always points to a specific file on disk, so obviously the name matches exactly. But this path may not be on disk because the image may have been packed into ``*.blend`` and the file may have been moved or deleted.
 
 .. image:: ./images/image-filepath.jpg
+    :align: center
 
 Regarding the different types of exported camera data files, there can also be different camera names. They can be with or without a file extension, they can be with a changed character register. For example, Reality Capture Metadata (XMP) files are named the same as images, but obviously have a different file extension because they are ``xml`` documents rather than images.
 
 All this information is necessary to understand how the add-on automation works. This applies to :doc:`importing and binding cameras and images <./ops/bind-camera-images>`, :doc:`importing camera data <./ops/import-cameras>`.
-
-.. Тепер, коли є розуміння базових понять, переходимо до теми порівняння назв. Як зрозуміло з тексту вище, для одного зображення використано не один блок даних як в фотограметричних програмах, а три. І кожен з них має свою власну назву.
-
-.. :ref:`Об'єкти-камери <data-blocks-object>` що було імпортовано, наприклад, через ``FBX`` формат, найчастіше матимуть назву файлів зображень, але можливо без розширення файлу. У об'єктів які було створено за допомогою :doc:`оператору імпорту камер <./ops/import-cameras>` в назві не буде розширення файлу.
-
-.. :ref:`Блоки даних камер <data-blocks-camera>` найчастіше мають стандартні назви (`Camera`, `Camera.001`, ...) і після імпорту сцени, і напевне - після :doc:`імпорту даних камер <./ops/import-cameras>`, але для деяких форматів файлів, наприклад, ``FBX`` експортований з Reality Capture, це буде назва зображення без розширення файлу.
-
-.. :ref:`Зображення <data-blocks-image>` найчастіше називаються так само як і файли зображень, але цілком можливі ситуації коли блок даних зображення в Blender має зовсім іншу назву (наприклад, якщо відкрити одне зображення чи створити згенероване а потім вказати шлях до іншого для того ж блоку даних).
-
-.. :ref:`Шлях файлу зображення <data-blocks-image>` завжди вказує на конкретний файл на диску, тому очевидно що назва відповідає повністю. Але цього шляху може не бути на диску, оскільки зображення може бути запаковано в ``*.blend`` а файл зображення переміщено чи видалено.
-
-.. Стосовно різних типів експортованих файлів з даними камер тут теж можуть бути різні назви камер. Вони можуть бути з розширенням файлу і без, можуть бути зі зміненим реєстром символів. Наприклад, файли Reality Capture Metadata (XMP), називаються так само як зображення, але очевидно що у них інше розширення файлу, оскільки це не зображення а `xml` документи.
-
-.. Вся ця інформація необхідна для розуміння того як працює автоматизація доповнення. Це стосується :doc:`імпорту і пов'язування камер і зображень <./ops/bind-camera-images>`, :doc:`імпорту даних камер <./ops/import-cameras>`.

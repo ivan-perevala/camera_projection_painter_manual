@@ -9,24 +9,12 @@ This user manual is an integral part of the add-on itself and contains a descrip
 Everything is documented - that is, you can simply hover over any add-on element (operator or property) while working, press the help key (``F1`` in Blender's standard layout), or call the documentation from the context menu:
 
 .. image:: ./images/online-manual.jpg
+    :align: center
 
 and get information about this element.
 
 .. note::
     For some properties, you can find more information here, as (as of version 3.6) Blender tooltips are limited to 400 ASCII characters. That is, for the localized version with utf-8 characters, it is even less. This is due to Blender performance, but it's hard to fit technical information into little more than a Twitter post (R.i.P.), so the full version of the descriptions for them can be found here.
-
-.. Цей користувацький мануал є невід'ємною частиною самого доповнення і містить як опис операторів і їх роботи, прості уроки що допоможуть почати користуватися доповненням, так і автоматично згенеровані описи властивостей.
-
-.. Задокументовано все - тобто можна просто під час роботи навести курсор на будь-який елемент доповнення (оператор, або властивість), натиснути клавішу для виклику допомоги (``F1`` у стандартній розкладці Blender), або ж з контекстного меню викликати документацію:
-
-.. .. image:: ./images/online-manual.jpg
-
-.. і отримати інформацію про цей елемент.
-
-.. ../note::
-    
-..     Для деяких властивостей тут можна знайти більше інформації, оскільки (для версії 3.6) в підказках Blender є обмеження у відображенні 400 ASCII символів. Тобто для локалізованої версії з utf-8 символами це ще менше. Це пов'язано з продуктивністю Blender, але важко вмістити технічну інформацію у трохи більше ніж у пост у Twitter (R.i.P.), тому повну версію описів для них можна знайти саме тут.
-
 
 
 History
@@ -53,3 +41,7 @@ assemble the module for each platform separately.
 
 In any case, version 0.1.6 lasted quite a long time (3 years), although it required using an older version
 Blender.
+
+On 01.03.2024, the first release was released that used only the standard Blender API. It didn't change the workflow too much,
+however brought support for more camera data files, double-precision floating point data storage, camera selection in
+texture drawing mode by simple selection instead of gizmo.

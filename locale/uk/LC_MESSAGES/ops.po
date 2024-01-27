@@ -231,10 +231,6 @@ msgid "For export, you need to choose the path and name of the file, and for som
 msgstr "Для експорту необхідно обрати шлях і назву файлу, а для деяких форматів (наприклад, Reality Capture Метадані (XMP) що записує кожну камеру в окремий файл) - директорію. Також необхідно обрати формат файлу і джерело назв."
 
 
-msgid "The current version of the add-on only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software."
-msgstr "Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
-
-
 msgid "Files supported by the current version of the addon:"
 msgstr "Файли які підтримує поточна версія доповнення:"
 
@@ -263,12 +259,28 @@ msgid "Comma-separated Name, X, Y, Z, Omega, Phi, Kappa"
 msgstr "Розділені Комою Назва, X, Y, Z, Омега, Фі, Каппа"
 
 
+msgid "**Agisoft Metashape**"
+msgstr ""
+
+
+msgid "Omega Phi Kappa (.txt)"
+msgstr "Омега Фі Каппа (.txt)"
+
+
 msgid "Regarding file format selection, you can simply select an existing file to overwrite and the export format will be selected automatically, according to the existing file format. It should be noted here that if an existing file is selected, then to export to another file format, it is necessary to remove the selection from the file and clear the file name field, only then it will be possible to choose another format."
 msgstr "Стосовно вибору формату файлу можна просто обрати наявний файл для перезапису і формат експорту буде обрано автоматично, відповідно до формату наявного файлу. Тут варто зазначити що якщо обрано наявний файл то для експорту в інший формат файлу необхідно зняти виділення з файлу і очистити поле назви файлу, лише потім можна буде обрати інший формат."
 
 
 msgid "As for choosing the source of the camera names in the exported file, it depends on the dataset of the current scene. Most of the time, the standard settings are enough (use the name of the camera object), but in certain non-standard situations, you need to specify it yourself."
 msgstr "Що стосується вибору джерела назв камер у експортованому файлі, то це залежить від набору даних поточної сцени. Найчастіше достатньо стандартних налаштувань (використовувати назву об'єкта камери), але в певних нестандартних ситуаціях це потрібно вказати самостійно."
+
+
+msgid "Number of Cameras"
+msgstr "Кількість Камер"
+
+
+msgid "Write number of cameras into a file for Reality Capture CSV-like file formats"
+msgstr "Записати кількість камер у файл для Reality Capture CSV-подібних форматів файлу"
 
 
 msgid "Calibration Groups"
@@ -357,14 +369,6 @@ msgstr "Для Сітки"
 
 msgid "Whether to use an image to create the object mesh data for Reality Capture (XMP)"
 msgstr "Чи використовувати зображення для створення сітки об'єкта для Reality Capture (XMP)"
-
-
-msgid "Number of Cameras"
-msgstr "Кількість Камер"
-
-
-msgid "Write number of cameras into a file for Reality Capture CSV-like file formats"
-msgstr "Записати кількість камер у файл для Reality Capture CSV-подібних форматів файлу"
 
 
 msgid "Forward"
@@ -491,8 +495,8 @@ msgid "For import, you need to select one or more files - their type will be det
 msgstr "Для імпорту необхідно обрати один або декілька файлів - їх тип буде визначено автоматично. На відміну від :doc:`імпортера сцени <import-scene>` тип файлу буде визначено не лише за розширенням - як тільки буде обрано файли їх буде частково зчитано і перевірено. Перевірка відбудеться за ключовими характеристиками різних типів файлів сторонніх програм - це може бути перший рядок з описом файлу або ж просто кількість елементів у рядку (для форматів розділених символом). Для ``XML`` файлів буде знайдено певні ключі в дереві і так далі."
 
 
-msgid "The current version of the addon only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software."
-msgstr "Поточна версія доповнення підтримує лише файли **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
+msgid "Agisoft XML"
+msgstr ""
 
 
 msgid "Import Scene"
@@ -509,10 +513,6 @@ msgstr "Якщо попередні налаштування з будь-яки�
 
 msgid "So, in order to use this operator, you need to select a file to import and select the default settings for :ref:`third-party <Software>` files. This setting is saved as addon preference so you can do it once."
 msgstr "Отже, для того аби скористатися цим оператором необхідно обрати файл для імпорту і обрати попередні налаштування для файлів :ref:`сторонніх програм <Software>`. Ці налаштування зберігаються як користувацькі налаштування доповнення тому можна зробити це один раз."
-
-
-msgid "The current version of the addon only has presets for **Reality Capture**. It is obvious that we plan to expand the support of files of third-party software."
-msgstr "Поточна версія доповнення має лише попередні налаштування для **Reality Capture**. Очевидно що плануємо розширити підтримку файлів сторонніх програм."
 
 
 msgid "Next, the file type will be automatically determined using its extension. Files supported by the current version of the addon:"

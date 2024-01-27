@@ -17,24 +17,7 @@ If there is only one "Render Result" image in the file, it will also be prompted
 If you want to leave everything as it is, you need to turn off all execution options and simply agree to execution - for example, if you need to complete the settings that were interrupted at one of the following stages.
 
 .. image:: ../images/data-cleanup.jpg
-
-.. Стадія :doc:`налаштування контексту <setup-context>` під час якої можна очистити наявні дані сцени.
-
-.. .. image:: ../images/data-cleanup.jpg
-
-.. Якщо у файлі є:
-
-.. * Куб
-.. * Матеріал
-.. * Камера
-.. * Лампа
-
-.. тобто це стандартна сцена, то буде запропоновано :ref:`очистити ці дані <Cleanup Data>`.
-
-.. Якщо у файлі є лише одне зображення "Render Result" то також буде запропоновано :ref:`очистити зображення <Cleanup Images>`.
-
-.. Якщо потрібно залишити все як є, всі опції виконання потрібно вимкнути і просто погодитися на виконання - наприклад якщо необхідно завершити налаштування що було перервано на одній з наступних стадій.
-
+    :align: center
 Cleanup Data
 ============
 

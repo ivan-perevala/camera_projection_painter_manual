@@ -3,103 +3,107 @@ Quick Start
 
 Standard and recommended methods of working with the add-on are described here. Of course, no one forces you to use them - here you can experiment at your own discretion.
 
-.. note::
+.. tab-set::
 
-    The current version of the addon only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software.
+    .. tab-item:: Reality Capture
+        
+        * **Export Object Wire**
 
-Reality Capture
-***************
+        In order to simplify the task when importing the model to Blender, we export the model as a Wavefront (.obj) file. In newer versions of Blender (3.2+), this type of file is imported quickly and contains only the data needed to work with the addon. The important options here are:
 
-* **Export camera data**
+            * ``Coordinate System`` - ``Same as XMP``
+            * ``Transformation Preset`` - ``Blender``
 
-.. image:: ./images/qs-rc-export-metadata-xmp.jpg
+        These will be used :ref:`as presets for the <Software>` import from Reality Capture when :doc:`importing the scene <./ops/import-scene>`.
 
+        .. image:: ./images/qs-rc-export-obj.jpg
+            :align: center
 
-* **Export object wire**
+        * **Export Camera Data**
 
-In order to simplify the task when importing the model to Blender, we export the model as a Wavefront (.obj) file. In newer versions of Blender (3.2+), this type of file is imported quickly and contains only the data needed to work with the addon. The important options here are:
+        .. image:: ./images/qs-rc-export-metadata-xmp.jpg
+            :align: center
 
-    * ``Coordinate System`` - ``Same as XMP``
-    * ``Transformation Preset`` - ``Blender``
+        * **Setup Context**
 
-These will be used :ref:`as presets for the <Software>` import from Reality Capture when :doc:`importing the scene <./ops/import-scene>`.
+        Next, you need to import this data. Start Blender and run :doc:`setup context <./ops/setup-context>`. There is nothing in the standard scene that will help us in our work, so this data can be deleted. This should also be done if, for example, you have finished adjusting one scene and want to move on to the next dataset. Therefore, the first question will be whether to clear the existing data:
 
-.. image:: ./images/qs-rc-export-obj.jpg
+        .. image:: ./images/qs-data-cleanup.jpg
+            :align: center
+    
 
-* **Setup Context**
+        Next, select the file containing the object wire and import it.
 
-Next, you need to import this data. Start Blender and run :doc:`setup context <./ops/setup-context>`. There is nothing in the standard scene that will help us in our work, so this data can be deleted. This should also be done if, for example, you have finished adjusting one scene and want to move on to the next dataset. Therefore, the first question will be whether to clear the existing data:
-
-.. image:: ./images/qs-data-cleanup.jpg
-
-Next, select the file containing the object wire and import it.
-
-.. image:: ./images/qs-import-scene.jpg
-
-Then you need to choose the texture that we will adjust.
-
-.. image:: ./images/qs-ensure-canvas.jpg
-
-Next, we import camera data. This will allow you to use lens distortion without exporting distortion corrected images.
-
-.. image:: ./images/qs-import-cameras.jpg
-
-The next step will be linking the images to the camera objects.
-
-.. image:: ./images/qs-bind-images.jpg
-
-And after that you can start adjusting the texture.
-
-.. image:: ./images/qs-complete.jpg
+        .. image:: ./images/qs-rc-import-scene.jpg
+            :align: center
 
 
-.. Тут описано стандартні і рекомендовані методи роботи з доповненням. Звісно, ніхто не змушує використовувати саме їх - тут можна експериментувати на власний розсуд.
+        Then you need to choose the texture that we will adjust.
 
-.. .. note::
-
-..     The current version of the addon only supports **Reality Capture** files. It is obvious that we plan to expand the support of files of third-party software.
-
-.. Reality Capture
-.. ***************
-
-.. * **Експорт даних камер**
-
-.. .. image:: ./images/qs-rc-export-metadata-xmp.jpg
+        .. image:: ./images/qs-rc-ensure-canvas.jpg
+            :align: center
 
 
-.. * **Експорт сітки об'єкту**
+        Next, we import camera data. This will allow you to use lens distortion without exporting distortion corrected images.
 
-.. Для того щоб спростити собі завдання під час імпорту моделі до Blender, експортуємо модель як Wavefront (.obj) файл. У нових версіях Blender (3.2+) цей тип файлів імпортується швидко і містить лише необхідні для роботи з доповненням дані. Тут важливими опціями є:
+        .. image:: ./images/qs-rc-import-cameras.jpg
+            :align: center
 
-..     * ``Coordinate System`` - ``Same as XMP``
-..     * ``Transformation Preset`` - ``Blender``
 
-.. Їх буде використано :ref:`як попередні налаштування для <Software>` імпорту з Reality Capture під час :doc:`імпорту сцени <./ops/import-scene>`.
+        The next step will be linking the images to the camera objects.
 
-.. .. image:: ./images/qs-rc-export-obj.jpg
+        .. image:: ./images/qs-rc-bind-images.jpg
+            :align: center
 
-.. * **Налаштування Контексту**
+        And after that you can start adjusting the texture.
 
-.. Далі необхідно імпортувати ці дані. Запускаємо Blender і запускаємо :doc:`налаштування контексту <./ops/setup-context>`. В стандартній сцені немає нічого що допоможе нам у роботі, тому ці дані можна видалити. Це також необхідно зробити якщо наприклад, Ви закінчили корегувати одну сцену і хочете перейти до наступного набору даних. Тому у першу чергу буде питання чи очистити наявні дані:
+        .. image:: ./images/qs-rc-complete.jpg
+            :align: center
 
-.. .. image:: ./images/qs-data-cleanup.jpg
+    .. tab-item:: Agisoft Metashape
+        
+        * **Export Object Wire**
+        
+        Export the reconstructed scene. It is recommended to use the Wavefront (.obj) format for this, as Blender 3.2+ will import this file type the fastest and it can store all the necessary mesh data and not contain extraneous data such as camera position information that needs to be imported separately.
+    
+        .. image:: ./images/qs-ms-export-obj.jpg
+            :align: center
 
-.. Далі - обираємо файл що містить сітку об'єкту і імпортуємо його.
+        * **Export Camera Data**
 
-.. .. image:: ./images/qs-import-scene.jpg
+        Next, we export the camera data, for this we will use the Agisoft XML format.
 
-.. Потім треба обрати текстуру яку будемо коригувати.
+        .. image:: ./images/qs-ms-export-agisoft-xml.jpg
+            :align: center
 
-.. .. image:: ./images/qs-ensure-canvas.jpg
+        * **Setup Context**
+        
+        Next, you need to import this data. Start Blender and run :doc:`setup context <./ops/setup-context>`. There is nothing in the standard scene that will help us in our work, so this data can be deleted. This should also be done if, for example, you have finished adjusting one scene and want to move on to the next dataset. Therefore, the first question will be whether to clear the existing data:
 
-.. Далі - імпортуємо дані камер. Це дозволить використовувати дисторсію лінзи без експорту зображень з корекцією дисторсії.
+        .. image:: ./images/qs-data-cleanup.jpg
+            :align: center
 
-.. .. image:: ./images/qs-import-cameras.jpg
+        Select the previously exported scene file and the presets for Agisoft Metashape.
 
-.. Наступним кроком буде пов'язування зображень до об'єктів-камер.
+        .. image:: ./images/qs-ms-import-scene.jpg
+            :align: center
 
-.. .. image:: ./images/qs-bind-images.jpg
+        Next, it is necessary to choose the texture that we will adjust.
+            
+        .. image:: ./images/qs-ms-ensure-canvas.jpg
+            :align: center
 
-.. І після цього можна починати коригувати текстуру.
+        Then import camera data from an XML file.
+        
+        .. image:: ./images/qs-ms-import-cameras.jpg
+            :align: center
+    
+        Finally, you need to bind the image to the cameras. To do this, select the directory in which the images are located.
 
-.. .. image:: ./images/qs-complete.jpg
+        .. image:: ./images/qs-ms-bind-images.jpg
+            :align: center
+
+        This completes the context setting, you can adjust the texture.
+
+        .. image:: ./images/qs-ms-complete.jpg
+            :align: center

@@ -231,14 +231,6 @@ msgid "The image that was previously attached to this camera"
 msgstr "Зображення що раніше було прив'язане до цієї камери"
 
 
-msgid "Reality Capture Properties"
-msgstr "Параметри Reality Capture"
-
-
-msgid "The properties that were imported from Reality Capture.They will be used for export"
-msgstr ""
-
-
 msgid "Preferences"
 msgstr "Налаштування"
 
@@ -353,6 +345,14 @@ msgstr ""
 
 msgid "Use presets for Reality Capture"
 msgstr "Використовувати попередні налаштування для Reality Capture"
+
+
+msgid "Agisoft Metashape"
+msgstr ""
+
+
+msgid "Use presets for Agisoft Metashape"
+msgstr "Використовувати попередні налаштування для Agisoft Metashape"
 
 
 msgid "Select Framebuffer Scale"

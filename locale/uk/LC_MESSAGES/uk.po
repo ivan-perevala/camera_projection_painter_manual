@@ -2097,15 +2097,6 @@ msgid "Please, follow installation instructions. You are using debug version."
 msgstr "Будь ласка, дотримуйтеся інструкцій встановлення. Ви використовуєте версію для налагодження"
 
 
-msgctxt "CPP_OT_calc_scene_cage"
-msgid "Update Cage"
-msgstr "Оновити Регіон"
-
-
-msgid "Updates the region for work, taking into account the size of the paint object and the position of all scene cameras"
-msgstr "Оновлює регіон для роботи, враховуючи розміри об'єкту для малювання та положення всіх камери сцени"
-
-
 #~ msgctxt "CPP_OT_bind_images"
 #~ msgid "For the selected options, all the necessary images are already binded. Search time - {elapsed:.3f} second(s)"
 #~ msgstr "Для вказаних опцій, усі відповідні зображення вже пов'язано. Час пошуку - {elapsed:.3f} секунд(и)"
@@ -2856,7 +2847,44 @@ msgstr "Імпортовано дані {done_num_cameras:d} камер(и), с�
 #~ msgstr "Приховує проекцію об'єкту поза межами регіону"
 
 
+#~ msgid "Use presets for Agisoft Metashape"
+#~ msgstr "Використовувати попередні налаштування для Agisoft Metashape"
+
+
+#~ msgid "Photogrammetry textures refinement"
+#~ msgstr ""
+
+
+#~ msgctxt "Preferences"
+#~ msgid "Agisoft Metashape"
+#~ msgstr ""
+
+
+#~ msgid "Tool Settings > Camera Painter"
+#~ msgstr ""
+
+
+#, fuzzy
+#~ msgid "Bind History"
+#~ msgstr "Історія Зображень"
+
+
+#, fuzzy
+#~ msgctxt "IOFormat"
+#~ msgid "Omega, Phi, Kappa (.txt)"
+#~ msgstr "Омега, Фі, Каппа"
+
+
 #~ msgctxt "Preferences"
 #~ msgid "Appearance"
 #~ msgstr "Відображення"
+
+
+#~ msgid "Updates the region for work, taking into account the size of the paint object and the position of all scene cameras"
+#~ msgstr "Оновлює регіон для роботи, враховуючи розміри об'єкту для малювання та положення всіх камери сцени"
+
+
+#~ msgctxt "CPP_OT_calc_scene_cage"
+#~ msgid "Update Cage"
+#~ msgstr "Оновити Регіон"
 
